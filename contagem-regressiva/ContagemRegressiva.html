@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste de ferramentas</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: SEGOE UI;
+    }
+
+    .contagem-regressiva {
+      min-width: 240px;
+      max-width: 480px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .box-contagem div {
+      height: 100px;
+      width: 100px;
+      border-radius: 10px;
+      background: #3A3650;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 40px;
+      font-weight: 500;
+      letter-spacing: 1.6px;
+    }
+
+    .legenda {
+      margin-top: -10px;
+      font-size: 20px;
+      font-weight: 100;
+    }
+  </style>
+</head>
+
+<div class="contagem-regressiva">
+  <div class="box-contagem">
+    <div>
+      <span id="dia"></span>
+      <span class="legenda">dias</span>
+    </div>
+  </div>
+  <div class="box-contagem">
+    <div>
+      <span id="hora"></span>
+      <span class="legenda">horas</span>
+    </div>
+  </div>
+  <div class="box-contagem">
+    <div>
+      <span id="minuto"></span>
+      <span class="legenda">min.</span>
+    </div>
+  </div>
+  <div class="box-contagem">
+    <div>
+      <span id="segundo"></span>
+      <span class="legenda">seg.</span>
+    </div>
+  </div>
+</div>
+<script src="ContagemRegressiva.js"></script>
+</body>
+
+</html>
